@@ -1,0 +1,26 @@
+relations:
+- - nova-compute:ceph
+  - ceph-mon:client
+- - glance:ceph
+  - ceph-mon:client
+- - cinder-ceph:ceph
+  - ceph-mon:client
+- - keystone:certificates
+  - vault:certificates
+- - neutron-api:certificates
+  - vault:certificates
+- - nova-cloud-controller:certificates
+  - vault:certificates
+- - cinder:certificates
+  - vault:certificates
+- - glance:certificates
+  - vault:certificates
+- - placement:certificates
+  - vault:certificates
+- - rabbitmq-server:certificates
+  - vault:certificates
+saas:
+  ceph-mon:
+    url: admin/{{ ceph }}.ceph-mon
+  vault:
+    url: admin/{{ vault }}.vault

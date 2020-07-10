@@ -1,0 +1,12 @@
+applications:
+  ceph-mon:
+    offers:
+      ceph-mon:
+        endpoints:
+        - client
+relations:
+- - ceph-osd:secrets-storage
+  - vault:secrets
+saas:
+  vault:
+    url: admin/{{ vault }}.vault
