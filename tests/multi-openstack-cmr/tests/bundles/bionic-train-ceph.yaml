@@ -4,7 +4,7 @@ series: bionic
 applications:
   ceph-osd:
     charm: cs:~gnuoy/ceph-osd-8
-    num_units: 3
+    num_units: 6
     series: bionic
     storage:
       osd-devices: '10G'

@@ -19,6 +19,10 @@ relations:
   - vault:certificates
 - - rabbitmq-server:certificates
   - vault:certificates
+- - ceph-radosgw:certificates
+  - vault:certificates
+- - ceph-radosgw:mon
+  - ceph-mon:radosgw
 saas:
   ceph-mon:
     url: admin/{{ ceph }}.ceph-mon

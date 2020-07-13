@@ -4,6 +4,7 @@ applications:
       ceph-mon:
         endpoints:
         - client
+        - radosgw
 relations:
 - - ceph-osd:secrets-storage
   - vault:secrets

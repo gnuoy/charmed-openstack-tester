@@ -6,3 +6,4 @@ tempest.log
 .stestr.conf
 tests/id_rsa_zaza
 tempest-workspace
+**/keystone_juju_ca_cert.crt
